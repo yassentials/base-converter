@@ -1,33 +1,41 @@
 {
-	"name": "base-converter",
-	"version": "1.0.0",
-	"description": "Simple base converter",
-	"keywords": ["base", "converter"],
-	"homepage": "https://github.com/ilyasa1211/base-converter#readme",
-	"bugs": {
-		"url": "https://github.com/ilyasa1211/base-converter/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ilyasa1211/base-converter.git"
-	},
-	"license": "ISC",
-	"author": "Muhammad Ilyasa Fadhlih",
-	"type": "module",
-	"main": "index.js",
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
-		"preview": "vite preview",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky",
-		"check": "biome check --write"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"husky": "^9.1.7",
-		"typescript": "^5.8.3",
-		"vite": "^6.3.5"
-	},
-	"packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912"
+  "name": "base-converter",
+  "version": "1.0.0",
+  "description": "Simple base converter",
+  "keywords": [
+    "base",
+    "converter"
+  ],
+  "homepage": "https://github.com/ilyasa1211/base-converter#readme",
+  "bugs": {
+    "url": "https://github.com/ilyasa1211/base-converter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyasa1211/base-converter.git"
+  },
+  "license": "ISC",
+  "author": "Muhammad Ilyasa Fadhlih",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "build:github": "vue-tsc && vite build --mode=github",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "format": "biome check --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.8",
+    "@tailwindcss/vite": "^4.0.0-alpha.1",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "husky": "^9.1.7",
+    "tailwindcss": "^4.0.0-alpha.1",
+    "typescript": "^5.8.3",
+    "vite": "^8.0.2",
+    "vue": "^3.5.13",
+    "vue-tsc": "^3.2.6"
+  }
 }

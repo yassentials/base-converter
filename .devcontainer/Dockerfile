@@ -1,10 +1,3 @@
-FROM node:24-bookworm
-
-RUN corepack enable pnpm && \
-  corepack prepare pnpm@latest --activate && \
-  yes | pnpm -v
+FROM node:25-trixie
 
 USER node
-
-WORKDIR /workspaces/base-converter
-
